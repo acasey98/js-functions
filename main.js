@@ -25,9 +25,24 @@ return `processed ${animal}`;
 
 console.log(nuggetizer('peeg'));
 
-const dogBreed = () =>{
-const db = prompt('What is your favorite dog breed?');
-return alert(`My favorite dog breed is ${db}.`);
+const dogBreed = (db) =>{
+return (`My favorite dog breed is ${db}.`);
 };
 
-dogBreed()
+console.log(dogBreed('schnauzer'));
+
+// const dogBreedDiv = document.getElementById('dog-breeds');
+// dogBreedDiv.innerHTML = dogBreed('yes');
+
+// const nuggetizerDiv = document.getElementById('nuggs');
+// nuggetizerDiv.innerHTML = nuggetizer('Beegus');
+
+const printToDom = (divId, textToPrint) => {
+const selectedDiv = document.getElementById(divId);
+selectedDiv.innerHTML += textToPrint;
+
+};
+
+printToDom('nuggs', nuggetizer('Gruto Grundis'));
+
+printToDom('dog-breeds', dogBreed('grug'));
