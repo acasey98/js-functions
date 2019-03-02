@@ -46,3 +46,13 @@ selectedDiv.innerHTML += textToPrint;
 printToDom('nuggs', nuggetizer('Gruto Grundis'));
 
 printToDom('dog-breeds', dogBreed('grug'));
+
+let bandNum = 0;
+const addBand = (bandNme) => {
+    bandNum += 1;
+printToDom('band-list', `${bandNum}. ${bandNme} `);
+
+};
+
+addBand('Active Child');
+addBand('Glass Animals');
