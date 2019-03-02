@@ -24,3 +24,10 @@ return `processed ${animal}`;
 };
 
 console.log(nuggetizer('peeg'));
+
+const dogBreed = () =>{
+const db = prompt('What is your favorite dog breed?');
+return alert(`My favorite dog breed is ${db}.`);
+};
+
+dogBreed()
